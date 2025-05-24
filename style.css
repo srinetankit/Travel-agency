@@ -1,0 +1,1354 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-bg : #333333;
+    --primary-color : #FFFFFF;
+    --secondary-color : #F58D54; 
+    --lato-font : "Lato", sans-serif;
+    --roboto-font : "Roboto", sans-serif;
+    --open-sans : "Open Sans", sans-serif;
+    --montserrat : "Montserrat", sans-serif;
+    --form-bg: #404040;
+    --form-btn-bg: #F55C24;
+    --light-border:#8e7676;
+}
+
+body{
+    background-color: var(--primary-bg);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    width: 100%;
+    height: 72px;
+}
+
+nav{
+    width: 80%;
+    /* background-color: #F58D54; */
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    transform: scale(0.9);
+    /* margin-left: 30px; */
+}
+
+.routes ul{
+    display: flex;
+}
+
+.hamburger{
+    display: none;
+    text-align: left;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+
+.routes ul li{
+    list-style: none;
+    margin-right: 30px;
+    text-transform: uppercase;
+    border: none;
+    font-family: var(--roboto-font);
+    cursor: pointer;
+}
+
+.routes ul li:hover a{
+    color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+}
+
+.routes ul li a{
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary-color);
+    padding-bottom: 6px;
+    font-weight: 600;
+}
+
+/* Landing page section starts */
+
+.landing-page{
+    overflow-x: hidden;
+    width: 100%;
+    height: 115vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url("./assets/images/landing-page-bg.jpg");
+    background-size: cover;
+    background-position: 40% 40%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-color: #000;
+    opacity: 0.6; */
+    position: relative;
+    
+}
+
+.landing-image-opacity{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: var(--primary-bg);
+    opacity: 0.4;
+
+}
+
+
+/* .landing-texts{
+      position: absolute;
+      z-index: 10;
+} */
+
+.landing-texts{
+    width: 100%;
+    height: 100%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--lato-font);
+    position: absolute;
+    z-index: 10;
+}
+
+.landing-texts .small-heading{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* margin-top: -10%; */
+    font-weight: 500;
+    animation: landing-page 1s;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.landing-texts .big-heading{
+    font-size: 6rem;
+    /* margin-top: -20%; */
+    margin: 4% auto;
+    line-height: 80px;
+    letter-spacing: 3.5px;
+    animation: landing-page 1.5s;
+    text-align: center;
+}
+
+.landing-para{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+    animation: landing-page 2s;
+    text-align: center;
+}
+
+.button{
+    font-size: 1.2rem;
+    font-weight: 900;
+    /* padding: 1.5rem 3.2rem; */
+    padding: 1.3rem 3rem;
+    margin-top: 5%;
+    border-radius: 40px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    animation: landing-page 2.5s;   
+}
+
+.button:hover{
+    background-color: var(--primary-color);
+    color: var(--primary-bg);
+}
+
+@keyframes landing-page{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Landing page section end */
+
+/* landing-cards section starts */
+
+.landing-cards{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 6% auto;
+    gap: 30px;
+    font-family: var(--lato-font);
+}
+
+.landing-cards .card{
+    width: 20%;
+    min-height: 300px;
+    border: 4px solid rgb(96, 96, 96);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.8% 1.5%;
+    color: var(--primary-color);
+    height: fit-content;
+    animation: landing-page 1.5s;
+}
+
+.card img{
+    width: 70px;
+    height: 70px;
+    margin: 6px auto;
+}
+
+.card h2{
+    /* max-width: 90%; */
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+.card span{
+    line-height: 28px;
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+/* landing-cards section end */
+
+/* landing-goodtrips starts here */
+
+.landing-goodtrips{
+    width: 100%;
+    position: relative;
+}
+
+.goodtrip-animate-div{
+    height: 740px;
+    width: 760px;
+    position: relative;
+    margin: 15% auto 2%;
+}
+
+.goodtrip-animate{
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/camping-min.jpg");
+    background-size: cover;
+    background-position: 50%;
+    border: 15px solid #666666;
+    border-radius: 50%;
+    animation: goodtrip-animation 2s;
+}
+
+
+.goodtrip-ring {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    border: 50px solid #F58D54;
+    position: absolute;
+    top: 65%;
+    left: -10%;
+    animation: landing-page 2s;
+}
+
+@keyframes goodtrip-animation{
+    from{
+        transform: translateX(-50%) rotate(-270deg);
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.goodtrip-contents{
+    width: 760px;
+    margin: 0px auto 100px;
+}
+
+.goodtrip-texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--lato-font);
+    /* padding-top: 50px; */
+    /* margin-bottom: 20%; */
+}
+
+.goodtrip-texts-animate{
+    animation: goodtrip-texts-animation 2s;
+}
+
+.goodtrip-button{
+    animation: goodtrip-texts-animation 2.5s;
+}
+
+@keyframes goodtrip-texts-animation {
+    from{
+        transform: translateY(30%) scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%) scale(1);
+        opacity: 1;
+
+    }
+}
+
+.common-heading{
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    text-align: center;
+    /* max-width: 80%; */
+    margin: auto;
+    font-family: var(--roboto-font);
+}
+
+.goodtrip-heading{
+    margin-top: 70px;
+}
+
+.common-para{
+    color: var(--primary-color);
+    line-height: 35px;
+    margin: 20px auto;
+    max-width: 85%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--roboto-font);
+}
+
+.common-btn{
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 1.3rem 3rem;
+    border-radius: 40px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    margin-top: 10px;
+    
+}
+
+.common-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--primary-bg);
+}
+
+
+
+
+/* landing-goodtrips end */
+
+/* travel-facilities starts here */
+.common-container{
+    width: 100vw;
+    margin: 15% auto;
+}
+
+.common-head {
+    width: 760px;
+    margin: 30px auto;
+}
+
+
+.facilities-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin: 6% auto;
+    gap: 25px;
+}
+
+.facility-card{
+    width: 20%;
+    /* height: 400px; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    text-align: center;
+    padding: 1.5%;
+    background-color: var(--primary-color);
+    color: var(--primary-bg);
+    
+    position: relative;
+}
+
+.facility-card:hover h3,
+.facility-card:hover span{
+    transform: translateY(-5px);
+} 
+.facility-card img{
+    height: 180px;
+    object-fit: cover;
+
+}
+
+.facility-card h3{
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-family: var(--roboto-font);
+    margin-top:0;
+}
+
+.facility-card span{
+    font-family: var(--lato-font);
+    line-height: 30px;
+}
+
+
+.facilities-contents{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 10% auto;
+}
+
+.facilities-div{
+    width: 40%;
+    /* border: 2px solid #000; */
+    /* height: 200px; */
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
+.facilities-div span::before{
+    content: 'f00c\'
+}
+
+.facilities-div span i{
+    color: var(--secondary-color);
+    font-size: 70px;
+}
+
+.facilities-div p{
+    font-family: var(--roboto-font);
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: var(--primary-color);
+}
+
+/* travel-facilities ends */
+
+/* why-us starts here */
+.why-us{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    margin: 15% auto 10%;
+    
+}
+
+.whyUs-header{
+    width: 40%;
+    margin: 0;
+    animation: whyUs-header-animate 2s;
+}
+
+.whyUs-animate{
+    width: 60%;
+}
+
+.whyUs-header h3{
+    text-align: start;
+    font-weight: 500;
+}
+
+.whyUs-header p{
+    text-align: start;
+    margin: 5% 0;
+    font-weight: 300;
+}
+
+.whyUs-btn{
+    display: inline-block;
+    animation: whyUs-btn-animate 2.5s;
+}
+
+
+/* .landing-goodtrips{
+    width: 100%;
+    position: relative;
+} */
+
+.whyUs-animate-div{
+    height: 560px;
+    width: 560px;
+    position: relative;
+    /* margin: 15% auto 2%; */
+}
+
+.whyUs-animate{
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/mountain-top.jpg");
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    animation: whyUs-animation 2s;
+}
+
+.whyUs-ring{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 40px solid #F58D54;
+    position: absolute;
+    top: -6%;
+    right: -2%;
+    z-index: 1;
+    animation: landing-page 2s;
+}
+
+@keyframes whyUs-animation{
+    from{
+        transform: rotate(-350deg) scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes whyUs-header-animate {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes whyUs-btn-animate {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* why-us ends */
+
+/* .whyUs-reviews starts here */
+.whyUs-reviews{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: #F58D54; */
+    column-gap: 20px;
+    row-gap: 80px;
+    box-sizing: border-box;
+    margin: 10% auto;
+}
+
+
+.whyUs-review{
+    /* min-height: 200px; */
+    max-width: 75%;
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+.whyUs-review p::before{
+    content: 'f10d\';
+}
+.whyUs-review i{
+    color: var(--secondary-color);
+    font-size: 35px;
+}
+
+.whyUs-review p{
+    margin: 6% 0;
+    color: var(--primary-color);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    font-family: var(--lato-font);
+}
+
+.whyUs-review span{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    font-family: var(--lato-font);
+}
+
+.review-one{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation : whyUs-review-animation 1.5s;
+}
+.review-two{
+    animation : whyUs-review-animation 2.2s;
+}
+.review-three{
+    animation : whyUs-review-animation 2.7s;
+}
+
+@keyframes whyUs-review-animation {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}
+
+/* .whyUs-reviews ends */
+
+/* .recreation{
+    margin: 5% auto;
+    width: 100%;
+}
+
+.recreation .common-head{
+    width: 80%;
+    
+}
+
+.recreation .common-heading{
+    max-width: 100%;
+    font-family: var(--open-sans);
+}
+
+.recreation .common-para{
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: var(--open-sans);
+
+}
+
+
+.recreation-crausal-div{
+    width: 80%;
+    margin: auto;
+}
+
+.recreation-crausal{
+    width: 100%;
+    height: 440px;
+}
+
+.recreation-crausal .crausal-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    overflow-x: scroll;    
+}
+
+.crausal-img .img{
+    object-fit: cover;
+    height: 100%;
+    width: 70%;
+    background-color: var(--primary-bg);
+}
+.crausal-img .img:hover{
+    transform: translate(1.1);
+    opacity: 0.5;
+} */
+
+
+/* adventure starts here */
+.adventure{
+    width: 80%;
+}
+
+.adventure .common-head{
+    width: 100%;
+    
+}
+
+.adventure .common-heading {
+    /* max-width: 100%; */
+    font-family: var(--open-sans);
+    animation: landing-page 1.5s;
+}
+
+.adventure .facility-card{
+    width: 31.5%;
+    row-gap: 20px;
+    padding: 30px 30px;
+    padding: 2% 2%;
+    border-radius: 30px;
+    /* animation: adventure-animation 1.5s; */
+}
+
+.adventure .facility-card img{
+    border-radius: 50%;
+    border: 8px solid var(--secondary-color);
+    margin: 10px auto;
+    height: 18vw;
+    width: 18vw;
+}
+.adventure .facility-card span::after{
+    content: "";
+    display: block;
+    border-top: 2px solid #d8d8d8;
+    margin: 10px auto;
+
+}
+
+.adventure .facility-card h3{
+    font-family: var(--lato-font);
+    padding-top: 10px;
+}
+.adventure .facility-card span{
+    font-family: var(--lato-font);
+    font-style: italic;
+    margin: auto;
+}
+
+
+        
+    .adventure .facility-card:nth-child(1),
+    .adventure .facility-card:nth-child(2),
+    .adventure .facility-card:nth-child(3)
+    {
+       
+        animation: adventure-animation 1.5s;
+    }
+    .adventure .facility-card:nth-child(4),
+    .adventure .facility-card:nth-child(5),
+    .adventure .facility-card:nth-child(6)
+    {
+       
+        animation: adventure-animation 2.5s;
+    }
+
+    .adventure .facility-card img:nth-child(1),
+    .adventure .facility-card img:nth-child(2),
+    .adventure .facility-card img:nth-child(3){
+        animation: whyUs-animation 2s;
+    }
+    .adventure .facility-card img:nth-child(4),
+    .adventure .facility-card img:nth-child(5),
+    .adventure .facility-card img:nth-child(6){
+        animation: whyUs-animation 3s;
+    }
+
+    @keyframes adventure-animation {
+        from{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+/* adventure end here */
+
+/* camping starts here */
+.camping{
+    width: 100%;
+    margin: 10% auto;
+}
+
+.camping .common-head{
+    width: 80%;
+}
+.camping .common-heading{
+    font-family: var(--lato-font);
+}
+
+.camping-div{
+    width: 80%;
+    height: 800px;
+    /* border: 2px solid #d8d8d8; */
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.inner-camping-div{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+}
+
+.camping-lg-div{
+    width: 100%;
+    height: 55%;
+    /* border: 2px solid rgb(5, 11, 178); */
+}
+.camping-sm-div{
+    width: 100%;
+    height: 45%;
+    /* border: 2px solid rgb(68, 255, 183); */
+    display: flex;
+}
+
+.camping-sm-div .sm-text-dark{
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: var(--primary-bg);
+    padding: 30px;
+}
+.camping-sm-div .sm-text-white{
+    width: 50%;
+    height: 100%;
+    background-color: #444444;
+    color: var(--primary-color);
+    padding: 30px;
+}
+
+.sm-text-dark, 
+.sm-text-white{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-items: center; */
+    margin: auto;
+}
+
+.sm-text-dark h3, 
+.sm-text-white h3{
+    font-family: var(--lato-font);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3;
+}
+.sm-text-dark span, 
+.sm-text-white span{
+    font-family: var(--open-sans);
+    line-height: 30px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+
+
+.camping-lg-div img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.sm-img{
+    width: 50%;
+    height: 100%;
+}
+
+.sm-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.order-first{
+    order: 1;
+}
+.order-second{
+    order: 2;
+}
+
+
+/* advanture-tour starts here */
+.advanture-tour{
+    width: 100%;
+    /* margin: 10% auto; */
+}
+
+.advanture-cards{
+     width: 80%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+     margin: 5% auto;
+}
+
+.advanture-card{
+    width: 100%;
+    /* height: 200px; */
+    border: 2px solid #d8d8d8;
+    padding: 30px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: adventure-animation 2s;
+}
+
+.advanture-card img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.advanture-card h3,
+.unique-txt h3{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--primary-bg);
+    font-family: var(--lato-font);
+    margin-top: 10px;
+}
+
+.advanture-card span,
+.unique-txt span{
+    font-family: var(--open-sans);
+    color: #808080;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+.advanture-card a,
+.unique-txt a{
+    color:var(--primary-bg);
+    font-family: var(--lato-font);
+    font-size: 1rem;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom-width: 1px;
+    border-bottom-color : var(--primary-bg);
+    border-bottom-style:solid;
+    padding-bottom: 5px;
+}
+
+
+/* advanture-tour ends here */
+
+/* unique starts here */
+.unique{
+    width: 100%;
+    margin: 0% auto;
+}
+.unique .common-head{
+    width: 100%;
+}
+.unique .common-heading,
+.unique .common-para{
+    width: 80%;
+    margin: auto;
+}
+
+.unique-contents{
+    width: 80%;
+    margin:20px auto;
+    box-sizing: border-box;
+    display:flex;
+}
+
+.unique-left{
+    width: 66%;
+    display: flex;
+}
+
+.unique-right{
+    width: 33%;
+}
+
+.unique-left-text{
+    width: 50%;
+}
+.unique-left-img{
+    width: 50%;
+}
+
+.unique-txt{
+    height:50%;
+    padding: 30px;
+    color: var(--primary-color);
+    display:flex;
+    flex-direction:column;
+    row-gap:30px;
+}
+
+.unique-txt h3,
+.unique-txt span,
+.unique-txt a{
+    color: var(--primary-color);
+}
+
+
+.unique-txt span{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.unique-left-img{
+    background-image: url("./assets/images/camping-girl-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* unique ends here */
+
+
+/* team starts here */
+.team{
+    width: 100%;
+    margin: 10% auto;
+}
+
+.team .common-head{
+    width: 80%;
+    display: flex;
+    padding: 0;
+    /* justify-content: start;
+    align-items: start;
+    text-align: start; */
+}
+
+.about-team{
+    width: 50%;
+    padding: 30px;
+}
+.about-team h3{
+    width: 100%;
+    text-align: start;
+    word-wrap: break-word;
+
+}
+.about-team p{
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.about-team .common-btn{
+    font-family: var(--open-sans);
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.team-members{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.member{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.member img{
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.member h4{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-family: var(--montserrat);
+    text-wrap:wrap;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+/* bottom-img section starts here */
+.bottom-img{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./assets/images/person-standing-top-hill-beautiful-colorful-sky-morning-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+     
+}
+
+.btn-img{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    /* background-color: var(--primary-bg); */
+    background-color: #000;
+    opacity: 0.4;
+}
+
+.bottom-content{
+    width: 410px;
+    padding: 30px;
+    color: var(--primary-color);
+    position: relative;
+    left: 10%;
+    top: 12%;
+    /* left: 150px;
+    top: 130px; */
+    animation: bottom-content-animate 2s;         
+}
+
+@keyframes bottom-content-animate {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+        z-index: 10;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+        z-index: 10;
+    }
+}
+
+.bottom-content .common-heading{
+    width: 100%;
+    text-align: start;
+    position: relative;
+    z-index: 10;
+    font-family: var(--lato-font);
+}
+
+.bottom-content p{
+    font-family: var(--open-sans);
+    position: relative;
+    z-index: 10;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0px;
+    line-height: 30px;
+}
+
+.bottom-content span i{
+    position: relative;
+    z-index: 10;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+
+/* bottom-img section ends here */
+
+
+/* subscribe section starts here */
+.subscribe{
+    margin: 5% auto;
+    width: 100%;
+}
+
+.subscribe .common-head{
+    animation: landing-page 2s;
+}
+
+.subscribe-form{
+    width: 660px;
+    margin: 4% auto;
+    font-family: var(--roboto-font);
+}
+
+.subscribe-form .inp{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.inp input{
+    width: 47%;
+    height: 45px;
+}
+
+.subscribe-form textarea{
+    width: 100%;
+    display: block;
+    height: 120px;
+    resize: none;
+}
+
+.inp input,
+.subscribe-form textarea{
+    border: none;
+    background-color: var(--form-bg);
+    outline: none;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary-color);
+    font-family: var(--roboto-font);
+    padding: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.subscribe-form input::placeholder,
+.subscribe-form textarea::placeholder{
+    font-family: var(--roboto-font);
+    /* padding: 10px; */
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.subscribe-form button{
+    width: 100%;
+    margin: 40px auto;
+    background-color: var(--form-btn-bg);
+    padding: 24px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-family: var(--lato-font);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 36px;
+}
+
+/* subscribe section ends here */
+
+
+
+/* footer ends here */
+footer{
+    width: 100%;
+}
+
+.foot{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: var(--primary-color);
+    display: flex;
+}
+
+.foot-left{
+    width: 40%;
+}
+.foot-right{
+    width: 60%;
+}
+
+
+
+.foot-social span{
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+
+.foot-social span a{
+    color: var(--primary-color);
+}
+
+.foot-social span i{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.foot-social span i:hover{
+    color: var(--form-btn-bg);
+    transform: scale(1.1);
+}
+
+.foot-form{
+    float: inline-end;
+}
+
+.foot-form p{
+    font-size: 16px;
+    font-family: var(--roboto-font);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.foot-txt input{
+    width:220px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--light-border);
+    color: var(--light-border);
+    padding:10px;
+    /* font-size: 14px; */
+}
+.foot-txt input:focus{
+    outline: none;
+    background: #000;
+    color: var(--primary-color);
+}
+.foot-txt button{
+    width:90px;
+    height: 40px;
+    /* padding:10px; */
+    background-color: transparent;
+    border: 1px solid var(--light-border);
+    position: relative;
+    left: -5px;
+    /* color: var(--primary-color); */
+    color: var(--light-border);
+    /* text-transform: uppercase; */
+}
+/* footer ends her
