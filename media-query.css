@@ -1,0 +1,705 @@
+ /* 
+ 320px - 480px : Mobile devices
+ 481px - 768px : iPads, Tablets
+ 769px - 1024px : Small screens, laptops
+ 1025px - 1200px : Desktops, large screens
+ 1201px : Extra large screens, TV
+ */
+ @media screen and (max-width : 1200px) {
+    .landing-page{
+        height: 100vh;
+    }
+
+    .whyUs-animate-div{
+        height: 500px;
+        width: 500px;
+    }
+
+    .whyUs-reviews{
+        margin: 16% auto;
+    }
+
+    .whyUs-review{
+        max-width: 85%;
+    }
+
+    .adventure .facility-card{
+        width: 29%;
+    }
+
+    /* .adventure .facility-card img{
+        height: 25vw;
+        width: 25vw;
+    } */
+
+    .camping-div{
+        height: 640px;
+        
+    }
+
+    .unique-txt{
+        padding: 20px;
+        row-gap:20px;
+    }
+
+    .member img{
+        width: 17vw;
+        height: 17vw;
+    }
+     
+ }
+
+ @media screen and (max-width : 1024px) {
+    .landing-page{
+        height: 90vh;
+    }
+    .landing-cards .card{
+        width: 40%;
+    }
+
+    .goodtrip-animate-div{
+        height: 630px;
+        width: 640px;
+    }
+
+    .goodtrip-ring {    
+        height: 220px;
+        width: 220px;
+        border: 45px solid #F58D54;
+        left: 0%;
+        top: 75%;
+    }
+
+    .goodtrip-contents{
+        margin: 6% auto;
+        width: 640px;
+    }
+
+    .common-para{
+        color: var(--primary-color);
+        line-height: 35px;
+        margin: 20px auto;
+        max-width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .common-head{
+        width: 640px;
+    }
+
+
+    .facility-card{
+        width: 40%;
+        padding: 2% 2% 4%;
+    }
+
+    .facility-card img{
+        height: 250px;
+        
+    }
+
+    .facilities-div{
+        width: 80%;
+        /* gap: 30px; */
+    }
+
+    .why-us{
+        width: 80%;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .whyUs-header{
+        width: 80%;
+        /* margin: 0; */
+    }
+
+    .whyUs-animate-div{
+        width: 100%;
+    }
+
+    .whyUs-animate-div{
+        height: 490px;
+        width: 490px;
+        margin: 10% auto;
+    }
+
+    .whyUs-ring{
+        top: -5%;
+        right: -11%;
+    }
+
+    .whyUs-reviews{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10% auto;
+    }
+
+    .whyUs-review{
+        max-width: 90%;
+        /* border: 2px solid red; */
+    }
+
+    .whyUs-review p{
+        margin: 5% 0;
+    }
+
+     .adventure .facility-card{
+        width: 47%;
+        padding: 3% 3%;
+    }
+
+    .adventure .facility-card img{
+        height: 25vw;
+        width: 25vw;
+    }
+
+
+    .camping .camping-div{
+        height: 1921px;
+    }
+
+    .inner-camping-div{
+        width: 100%;
+        height: 960px;
+        /* border: 2px solid yellow; */
+    }
+
+    /* .camping-lg-div{
+        width: 100%;
+        height: 55%;
+    }
+    .camping-sm-div{
+        width: 100%;
+        height: 45%;
+        display: flex;
+    } */
+
+    .advanture-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .unique-contents{
+        flex-direction: column;
+    }
+
+    .unique-left{
+        width: 100%;
+    }
+
+    .unique-right{
+        width: 100%;
+    }
+
+    .unique-txt{
+        padding: 30px;
+        row-gap:30px;
+    }
+
+
+    .team{
+        width: 100%;
+        margin: 15% auto;
+    }
+
+    .team-members{
+        flex-wrap: wrap;
+    }
+
+    .member{
+        width: 50%;
+        margin-bottom: 10%;
+    }
+
+    .member img{
+        width: 24vw;
+        height: 24vw;
+        border-radius: 50%;
+        margin: 20px auto;
+    }
+
+    /* bottom-img section starts here */
+    .bottom-img{
+        height: 90vh;
+    }
+
+    .bottom-content{
+        left: 5%;
+    }
+ }
+
+/* @media screen and (min-width : 481px) and (max-width : 768px) { */
+
+@media screen and (max-width : 768px) {
+    nav{
+        width: 90%;
+    }
+    .logo img {
+        transform: scale(0.8);
+    }
+    .routes ul{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    /* .landing-page{
+        height: 100vh;
+    } */
+
+    .landing-texts .big-heading{
+        max-width: 85%;
+        font-size: 5rem;
+    }
+
+    .landing-para{
+        max-width: 90%;
+        font-size: 1.3rem;
+    }
+
+    .button{
+        font-size: 1.1rem;
+        padding: 1.3rem 2.8rem;
+    }
+
+    .landing-cards .card{    
+        width: 80%;
+        min-height: auto;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    .card h2{
+        max-width: 80%;
+    }
+
+    .goodtrip-animate-div{
+        height: 480px;
+        width: 480px;
+    }
+
+    .goodtrip-ring {    
+        height: 200px;
+        width: 200px;
+        border: 40px solid #F58D54;
+        left: 3%;
+        top: 73%;
+    }
+
+    .goodtrip-contents{
+        margin: 6% auto;
+         width: 460px;
+    }
+
+    .common-head{
+        /* margin: 6% auto; */
+         width: 460px;
+    }
+
+    .facilities-contents{
+        margin: 20% auto;
+    }
+
+    .facility-card{
+        width: 80%;
+        padding: 4%;
+    }
+
+    .facility-card img{
+        height: 370px;
+        object-position: 60% 60%;
+    }
+
+    .facilities-div{
+        width: 75%;
+        /* gap: 30px; */
+    }
+
+    .why-us{
+        /* justify-content: center; */
+        width: 80%;
+    }
+
+    .whyUs-animate-div{
+        height: 395px;
+        width: 395px;
+        margin: 25% auto;
+    }
+
+    /* .whyus-animate{
+        margin: 2% auto;
+    } */
+
+    .whyUs-ring{
+        top: -15%;
+        right: -6%;
+ 
+    }
+
+    .whyUs-reviews{
+        /* width: 80%; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .whyUs-review p{
+        margin: 3% 0;
+    }
+
+    .adventure .facility-card{
+        width: 90%;
+        padding: 5% 5%;
+    }
+
+    .adventure .facility-card img{
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .camping{
+        margin: 25% auto;
+    }
+
+    .camping .camping-div{
+        height: 2400px;
+    }
+
+    .inner-camping-div{
+        width: 100%;
+        height: 1200px;
+        /* border: 2px solid yellow; */
+    }
+
+    .camping-lg-div{
+        width: 100%;
+        height: 400px;
+    }
+    .camping-sm-div{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .camping-sm-div .sm-text-dark{
+        width: 100%;
+        max-height: 30%;
+         
+    }
+    .camping-sm-div .sm-text-white{
+        width: 100%;
+        max-height: 30%;
+    }
+
+    .sm-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .order-first{
+        order: 2;
+    }
+    .order-second{
+        order: 1;
+    }
+
+    .advanture-cards{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .unique-left{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .unique-left-text{
+        width: 100%;
+    }
+
+    .unique-left-img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .unique-left-img{
+        height: 100vh;
+        padding: 30px;
+    }
+
+    .unique-txt{
+        padding: 30px 10px;
+    }
+    .unique .common-head{
+        margin-top: 20%;
+    }
+
+    .team .common-head{
+        /* justify-content: start;
+        align-items: start;
+        text-align: start; */
+        flex-direction: column;
+    }
+
+    .about-team{
+        width: 100%;
+        padding:30px 10px;
+    }
+
+    .adventure .common-heading {
+        max-width: 80%;
+    }
+
+    .member{
+        width: 100%;
+    }
+
+    .member img{
+        width: 220px;
+        height: 220px;
+        margin: 10px auto;
+    }
+
+    .bottom-img{
+        /* height: 85vh; */
+        background-position: 70% 70%;
+    }
+
+    .subscribe-form{
+        width: 80%;
+    }
+
+    .foot{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot-right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+     
+}
+
+@media screen and (max-width : 480px) {
+    /* nav{
+        width: 90%;
+    } */
+    /* .logo img {
+        transform: scale(0.8);
+    }
+    .routes ul{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    } */
+
+    .landing-page{
+        height: 80vh;
+    }
+
+    .landing-texts .big-heading{
+        line-height: 32px;
+        font-size: 2rem;
+        margin: 8% auto;
+    }
+
+    .landing-para{
+        max-width: 90%;
+        font-size: 1.4rem;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .button{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        margin-top: 8%;
+    }
+
+    .goodtrip-animate-div{
+        height: 310px;
+        width: 310px;
+        /* margin: 30px auto; */
+    }
+
+    .goodtrip-ring {    
+        height: 100px;
+        width: 100px;
+        border: 20px solid #F58D54;
+        left: 1%;
+    }
+
+    .goodtrip-contents{
+        margin: 6% auto;
+         width: 90%;
+         padding: 20px;
+    }
+
+    .common-heading{
+        font-size: 2rem;
+    }
+
+    .common-btn{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .common-head{
+        /* margin: 6% auto; */
+        width: 90%;
+        padding: 20px;
+    }
+
+    .facilities-contents{
+        margin: 30% auto;
+    }
+
+    .facility-card{
+        width: 80%;
+        padding: 5%;
+    }
+
+    .facility-card img{
+        height: 260px;
+        object-position: 60% 60%;
+    }
+
+    .facilities-div span i{
+        font-size: 50px;
+    }
+
+    .facilities-div p{
+        /* font-size: 1rem; */
+        line-height: 30px;
+         
+    }
+
+    .why-us{
+        width: 90%;
+    }
+
+    .whyUs-animate-div{
+        height: 290px;
+        width: 290px;
+        margin: 25% auto;
+    }
+
+    .whyUs-ring{
+        height: 160px;
+        width: 160px;
+        border: 30px solid #F58D54;
+        top: -20%;
+        right: 1%;
+    }
+
+    /* .whyUs-reviews{
+        width: 0%;
+    } */
+
+    .whyUs-review{
+        max-width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .adventure .facility-card{
+        width: 100%;
+        padding: 5% 5%;
+    }
+
+    .adventure .facility-card img{
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .camping {
+        margin: 25% auto 10%;
+    }
+
+    .camping .camping-div{
+        height: 1720px;
+    }
+
+    .inner-camping-div{ 
+        height: 860px;  
+        /* height: 50%;   */
+    }
+
+    .camping-lg-div{
+        height: 250px;
+    }
+    .camping-sm-div{
+        height: 610px;
+    }
+
+    .camping-sm-div .sm-text-dark {
+        max-height: 40%;
+    }
+    .camping-sm-div .sm-text-white{
+        max-height: 40%;
+    }
+    
+    .unique .common-head{
+        padding: 20px 0;
+        /* width: 100%; */
+    }
+    .unique-left-img{
+        height: 70vh;
+    }
+
+    .member img{
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    .bottom-img{
+        background-position: 30% 30%;
+    }
+
+    .bottom-content{
+        width: 90%;
+        left: 3%;
+    }
+
+    .subscribe .common-head{
+        margin: 0 auto;
+    }
+
+    .subscribe-form .inp{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+
+    .inp input{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .foot-form p{
+        font-size: 14px;
+    }
+
+    .foot-txt input{
+        width:160px;
+    }
+    .foot-txt button{
+        width:70px;
+    }
+}
