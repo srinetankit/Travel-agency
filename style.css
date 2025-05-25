@@ -1351,4 +1351,28 @@ footer{
     color: var(--light-border);
     /* text-transform: uppercase; */
 }
-/* footer ends her
+
+.foot-border{
+    width: 80%;
+    margin: 20px auto;
+    /* height: 1px; */
+    border-top: 1px solid #625a5a;
+}
+
+.copyright{
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.copyright p{
+    font-family: var(--roboto-font);
+}
+.copyright span{
+    margin-left: 5px;
+    font-size: 14px;
+     /* font-family: var(--lato-font); */
+     /* font-family: var(--montserrat); */
+     /* font-family: var(--open-sans); */
+     font-family: var(--roboto-font);
+}
+/* footer ends here
