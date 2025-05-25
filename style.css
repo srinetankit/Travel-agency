@@ -1332,7 +1332,6 @@ footer{
     border: 1px solid var(--light-border);
     color: var(--light-border);
     padding:10px;
-    /* font-size: 14px; */
 }
 .foot-txt input:focus{
     outline: none;
@@ -1342,20 +1341,16 @@ footer{
 .foot-txt button{
     width:90px;
     height: 40px;
-    /* padding:10px; */
     background-color: transparent;
     border: 1px solid var(--light-border);
     position: relative;
     left: -5px;
-    /* color: var(--primary-color); */
     color: var(--light-border);
-    /* text-transform: uppercase; */
 }
 
 .foot-border{
     width: 80%;
     margin: 20px auto;
-    /* height: 1px; */
     border-top: 1px solid #625a5a;
 }
 
@@ -1370,9 +1365,6 @@ footer{
 .copyright span{
     margin-left: 5px;
     font-size: 14px;
-     /* font-family: var(--lato-font); */
-     /* font-family: var(--montserrat); */
-     /* font-family: var(--open-sans); */
-     font-family: var(--roboto-font);
+    font-family: var(--roboto-font);
 }
 /* footer ends here
